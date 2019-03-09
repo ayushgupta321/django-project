@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Models</title>
+    </head>
+    <body>
+        {% if data %}
+        <table>
+            {%for fields in data%}
+            <tr>
+                <td>{{fields.first_name}}</td>
+                <td>{{fields.last_name}}</td>
+                <td>{{fields.email}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </body>
+</html>
