@@ -2,14 +2,32 @@
 {% load static %}
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{% static "css/style1.css" %}" />
         <title>My First Page</title>
     </head>
 
-    <body>
-        <h1>Hey There Hardik </h1>
-        <img src="{% static "speed.png" %}" />
-        
+    <body style="background-image: url({% static "back.gif" %})">
+       <div class="container-fluid">
+           <div class="jumbotron">       
+               <h2>Hey There! </h2>
+               <h5>This website is not completed yet. Be the First to know when it's ready!</h5>
+        <!--<img src="{% static "speed.png" %}" /> 
+        -->
+            </div>
+ 
+        </div>
+
+        <div class="card" style="width:30%; align-content:center;align-self: center;margin:0 auto;">
+            <div class="card-header">Sign Up for Updates</div>
+            <div class="card-body">
+                <form method="POST">
+                    {{form.as_p}}
+                    {% csrf_token %}
+                   <p style="align-content: center;margin-left:40%;position: relative;"> <input type="submit" class="btn btn-primary" value="Submit"></p>
+                </form>
+            </div>
+        </div>
         
     </body>
 </html>
