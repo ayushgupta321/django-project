@@ -1,0 +1,12 @@
+.jumbotron {
+    opacity:0.4;
+    align-content: center;
+}
+
+.card{
+    opacity:0.8;
+}
+
+label{
+    width:25%;
+}
