@@ -2,9 +2,9 @@
 {% load static %}
 <html>
     <head>
+            <link rel="stylesheet" type="text/css" href="{% static "css/style1.css" %}" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="{% static "css/style1.css" %}" />
-        <title>My First Page</title>
+               <title>My First Page</title>
     </head>
 
     <body style="background-image: url({% static "back.gif" %})">
@@ -18,13 +18,13 @@
  
         </div>
 
-        <div class="card" style="width:30%; align-content:center;align-self: center;margin:0 auto;">
+        <div class="card" style="width:35%;margin:0 auto;">
             <div class="card-header">Sign Up for Updates</div>
-            <div class="card-body">
+            <div class="card-body" style="padding-left:20%;">
                 <form method="POST">
                     {{form.as_p}}
                     {% csrf_token %}
-                   <p style="align-content: center;margin-left:40%;position: relative;"> <input type="submit" class="btn btn-primary" value="Submit"></p>
+                   <p style="margin:0 auto"> <input type="submit" class="btn btn-primary" value="Submit"></p>
                 </form>
             </div>
         </div>
