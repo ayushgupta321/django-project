@@ -27,7 +27,6 @@ SECRET_KEY = 'sp5%$vtv37#1txdrl__7%knyxz6zn8t^in5-o4@)0==+3+lqby'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    myproj.pythonanywhere.com
 ]
 
 
