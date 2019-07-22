@@ -1,37 +1,133 @@
 <!DOCTYPE html>
+
 {% load static %}
-<html>
+
+<html lang=en>
     <head>
-            <link rel="stylesheet" type="text/css" href="{% static "css/style1.css" %}" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-               <title>My First Page</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+            <link rel="stylesheet" type="text/css" href="{% static "css/style1.css" %}" /> 
+            <title>My First Page</title>
+
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-sm bg-dark fixed-top">
-                <ul class="navbar-nav">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="#home1">Home</a>
+                          <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#education1">Education</a>
+                          <a class="nav-link" href="#edu">Education</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#edu">Technical Experience</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#education2">Technical Skills</a>
+                            <a class="nav-link" href="#edu">Projects</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="#extra1">Extra-Curricular</a>
-                              </li>
-                         <li class="nav-item">
-                                <a class="nav-link" href="#">View Resume</a>
-                          </li>
+                                <a class="nav-link" href="{% static "11710562_AyushGupta_IT.pdf" %}">Resume</a>
+                            </li>
                       </ul>
-                    
-        </nav>
-        <div id="home1" class="container">
-            Hello
+                    </div>
+            </nav>
+
+            <div id="home" class="home">
+                <div id ="ani" class="holder1 animate-reveal animate-first">
+                   <h1> Hi There!<br>I'm Ayush Gupta<br>Welcome to my Website.</h1>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Use the Navigation Bar to navigate.</h5>
+                        </div>
+                </div>
+                       
+
+            </div>
+            <div id="edu" class="edu">
+                <div class="jumbotron">
+                    <h1> Uh Oh! It looks like I'm maintaining this part.<br />
+                    Be Sure to check later.</h1>
+                </div>
+            </div>
+            <!--
+            <div id="tech" class="tech">
+                Mushimushi
+            </div>
+            <div id="proj" class="proj">
+                Bonjour
+            </div>
+            -->
+
+
+
+
+         
+    </body>
+
+
+    <style>
+    .animate-reveal {
+    font: bold 1.5em sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    -webkit-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+       -moz-animation: reveal 1s ease-in 1 normal forwards;
+         -o-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            animation: reveal 1.3s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  }
+  
+  .animate-first {
+    -webkit-animation-delay: 2;
+       -moz-animation-delay: 2;
+         -o-animation-delay: 2;
+            animation-delay: 2;
+  }
+
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+
+    
+    </style>
+
+
+</html>
+
+
+
+ <!--
+        <div id="home1" class="home">
+            Hello1
         </div>
-        <div id="education1" class="container">
+        <div id="education1" class="edu1">
             There
         </div>
         <div id="education2" class="container">
@@ -42,7 +138,7 @@
         </div>
         
     
-
+    -->
 
 
       <!-- <div class="container-fluid">
@@ -66,5 +162,3 @@
             </div>
         </div>
     -->
-    </body>
-</html>

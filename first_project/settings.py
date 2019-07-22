@@ -124,9 +124,9 @@ STATIC_URL = '/static/'
 
 
 STATIC_ROOT = STATIC_DIR
+
 '''
 STATICFILES_DIR = [
     STATIC_DIR,
 ]
-
 '''
